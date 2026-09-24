@@ -21,8 +21,5 @@
     "url": "https://github.com/the-most-secure-supply-chain-ever-maaan/shared-lib/issues"
   },
   "homepage": "https://github.com/the-most-secure-supply-chain-ever-maaan/shared-lib#readme",
-  "description": "",
-  "devDependencies": {
-    "eslint": "10.11.0"
-  }
+  "description": ""
 }
