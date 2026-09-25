@@ -26,12 +26,14 @@ jobs:
             - name: Setup Node.js
               id: setup-node
               uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+              with:
+                  node-version-file: .nvmrc
 
             - name: Forbid non-exact version ranges in package.json
               run: '! grep -qE "\"\\s*:\\s*\"[\^~]" package.json'
 
             - name: Install dependencies
-              run: npm ci
+              run: npm ci --ignore-scripts
 
     build-package:
         needs: build-and-test
@@ -41,4 +43,4 @@ jobs:
             id-token: write
             attestations: write
             security-events: write
-        uses: the-most-secure-supply-chain-ever-maaan/workflows/.github/workflows/build-package.yml@77a2eb5de888b42c6afda2b48961a818df179be1 #v1.16.0
+        uses: the-most-secure-supply-chain-ever-maaan/workflows/.github/workflows/build-package.yml@af1f9d8a6a919250a82da871457f9cdf6e19602b #v1.17.0
