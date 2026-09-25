@@ -43,4 +43,4 @@ jobs:
             id-token: write
             attestations: write
             security-events: write
-        uses: the-most-secure-supply-chain-ever-maaan/workflows/.github/workflows/build-package.yml@b83973aaf17faeceb9d58ecd39b453cf300663d3 #v1.15.0
+        uses: the-most-secure-supply-chain-ever-maaan/workflows/.github/workflows/build-package.yml@af1f9d8a6a919250a82da871457f9cdf6e19602b
